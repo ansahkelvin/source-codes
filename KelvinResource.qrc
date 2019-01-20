@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/kelvin.img">
+        <file>img/font.jpg</file>
+        <file>img/new2.png</file>
+        <file>img/open.jpg</file>
+        <file>img/paste.png</file>
+        <file>img/Print.png</file>
+        <file>img/realabout.png</file>
+        <file>img/realcopy.png</file>
+        <file>img/realcut.png</file>
+        <file>img/realundo.png</file>
+        <file>img/redo.png</file>
+        <file>img/save as.png</file>
+        <file>img/save-icon-9.png</file>
+    </qresource>
+</RCC>
