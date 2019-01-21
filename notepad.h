@@ -43,6 +43,8 @@ private slots:
 
     void on_actionBackground_Color_triggered();
 
+    void on_actionPrint_triggered();
+
 private:
     Ui::Notepad *ui;
     QString file_path_;

@@ -9,6 +9,8 @@
 #include <QFontDialog>
 #include <QColor>
 #include <QColorDialog>
+#include <QPrintDialog>
+#include <QPrinter>
 
 Notepad::Notepad(QWidget *parent) :
     QMainWindow(parent),
@@ -150,4 +152,14 @@ void Notepad::on_actionColor_triggered()
         ui->textEdit->setTextColor(color);
     }
 
+}
+
+void Notepad::on_actionPrint_triggered()
+{
+  QPrinter printer;
+  printer.setPrinterName("Desired Printer Name");
+  QPrintDialog dialog(&printer, this);
+
+  if (dialog.exec()== QDialog::Rejected) return;
+  ui->textEdit->print(&printer);
 }
