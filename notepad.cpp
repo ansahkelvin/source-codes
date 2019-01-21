@@ -5,6 +5,10 @@
 #include<QFileDialog>
 #include<QTextStream>
 #include<QMessageBox>
+#include <QFont>
+#include <QFontDialog>
+#include <QColor>
+#include <QColorDialog>
 
 Notepad::Notepad(QWidget *parent) :
     QMainWindow(parent),
@@ -116,4 +120,34 @@ about_text += "(c)  Personal NotePad (R)" ;
 
 
     QMessageBox::about(this,"About NotePad",about_text);
+}
+
+void Notepad::on_actionFont_triggered()
+{
+   bool ok;
+   QFont font = QFontDialog::getFont(&ok ,this);
+
+   if(ok){
+       ui->textEdit->setFont(font);
+}else return;
+}
+
+void Notepad::on_actionBackground_Color_triggered()
+{
+    QColor color = QColorDialog::getColor(Qt::white , this,"Choose color");
+
+    if (color.isValid()){
+
+        ui->textEdit->setTextBackgroundColor(color);
+}
+}
+
+void Notepad::on_actionColor_triggered()
+{ QColor color = QColorDialog::getColor(Qt::white , this,"Choose color");
+
+    if (color.isValid()){
+
+        ui->textEdit->setTextColor(color);
+    }
+
 }

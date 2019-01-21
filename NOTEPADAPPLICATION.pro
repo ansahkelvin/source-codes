@@ -20,4 +20,5 @@ HEADERS  += notepad.h
 FORMS    += notepad.ui
 
 RESOURCES += \
-    KelvinResource.qrc
+    KelvinResource.qrc \
+    second.qrc

@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/newoi">
+        <file>img/_open.png</file>
+        <file>img/color.png</file>
+        <file>img/color_line.png</file>
+        <file>img/document_save_as.png</file>
+        <file>img/filesaveas.png</file>
+        <file>img/folder_grey_open.png</file>
+        <file>img/folder_open.png</file>
+        <file>img/fonte.png</file>
+        <file>img/fonts.png</file>
+        <file>img/gnome_edit_redo.png</file>
+        <file>img/gnome_edit_undo.png</file>
+        <file>img/gtk_color_picker.png</file>
+        <file>img/redo.png</file>
+        <file>img/undo.png</file>
+    </qresource>
+    <qresource prefix="/others">
+        <file>img/copy.png</file>
+        <file>img/cut.png</file>
+        <file>img/edit_paste.png</file>
+        <file>../../Downloads/gettyimages-531002760-170x170.jpg</file>
+        <file>../../Downloads/gettyimages-627993994-170x170.jpg</file>
+        <file>../../Downloads/info.png</file>
+        <file>../../Downloads/printer.png</file>
+        <file>../../Downloads/printers_faxes.png</file>
+        <file>../../Downloads/document_new.png</file>
+    </qresource>
+</RCC>

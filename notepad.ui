@@ -50,6 +50,8 @@
     <addaction name="separator"/>
     <addaction name="actionRedo"/>
     <addaction name="actionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="actionFont"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -57,9 +59,17 @@
     </property>
     <addaction name="actionAbout_Notepad"/>
    </widget>
+   <widget class="QMenu" name="menuColor">
+    <property name="title">
+     <string>Color</string>
+    </property>
+    <addaction name="actionBackground_Color"/>
+    <addaction name="actionColor"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuAbout"/>
+   <addaction name="menuColor"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -74,20 +84,27 @@
    <addaction name="actionSave_as"/>
    <addaction name="actionPrint"/>
    <addaction name="separator"/>
+   <addaction name="separator"/>
    <addaction name="actionCut"/>
    <addaction name="actionCopy"/>
    <addaction name="actionPaste"/>
+   <addaction name="separator"/>
    <addaction name="separator"/>
    <addaction name="actionRedo"/>
    <addaction name="actionUndo"/>
    <addaction name="separator"/>
    <addaction name="actionAbout_Notepad"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionFont"/>
+   <addaction name="actionBackground_Color"/>
+   <addaction name="actionColor"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/new2.png</normaloff>:/kelvin.img/img/new2.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/others/Downloads/document_new.png</normaloff>:/others/Downloads/document_new.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -95,8 +112,8 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/open.jpg</normaloff>:/kelvin.img/img/open.jpg</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/_open.png</normaloff>:/newoi/img/_open.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -113,8 +130,8 @@
   </action>
   <action name="actionSave_as">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/save as.png</normaloff>:/kelvin.img/img/save as.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/filesaveas.png</normaloff>:/newoi/img/filesaveas.png</iconset>
    </property>
    <property name="text">
     <string>Save as</string>
@@ -122,8 +139,8 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/realcut.png</normaloff>:/kelvin.img/img/realcut.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/others/img/cut.png</normaloff>:/others/img/cut.png</iconset>
    </property>
    <property name="text">
     <string>Cut</string>
@@ -131,8 +148,8 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/realcopy.png</normaloff>:/kelvin.img/img/realcopy.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/others/img/copy.png</normaloff>:/others/img/copy.png</iconset>
    </property>
    <property name="text">
     <string>Copy</string>
@@ -140,8 +157,8 @@
   </action>
   <action name="actionPaste">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/paste.png</normaloff>:/kelvin.img/img/paste.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/others/img/edit_paste.png</normaloff>:/others/img/edit_paste.png</iconset>
    </property>
    <property name="text">
     <string>Paste</string>
@@ -149,8 +166,8 @@
   </action>
   <action name="actionPrint">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/Print.png</normaloff>:/kelvin.img/img/Print.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/others/Downloads/printer.png</normaloff>:/others/Downloads/printer.png</iconset>
    </property>
    <property name="text">
     <string>Print</string>
@@ -158,8 +175,8 @@
   </action>
   <action name="actionRedo">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/redo.png</normaloff>:/kelvin.img/img/redo.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/redo.png</normaloff>:/newoi/img/redo.png</iconset>
    </property>
    <property name="text">
     <string>Redo</string>
@@ -167,8 +184,8 @@
   </action>
   <action name="actionUndo">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/realundo.png</normaloff>:/kelvin.img/img/realundo.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/undo.png</normaloff>:/newoi/img/undo.png</iconset>
    </property>
    <property name="text">
     <string>Undo</string>
@@ -176,17 +193,45 @@
   </action>
   <action name="actionAbout_Notepad">
    <property name="icon">
-    <iconset resource="KelvinResource.qrc">
-     <normaloff>:/kelvin.img/img/realabout.png</normaloff>:/kelvin.img/img/realabout.png</iconset>
+    <iconset resource="second.qrc">
+     <normaloff>:/others/Downloads/info.png</normaloff>:/others/Downloads/info.png</iconset>
    </property>
    <property name="text">
     <string>About Notepad</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/fonte.png</normaloff>:/newoi/img/fonte.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionBackground_Color">
+   <property name="icon">
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/color.png</normaloff>:/newoi/img/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Background Color</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="second.qrc">
+     <normaloff>:/newoi/img/color_line.png</normaloff>:/newoi/img/color_line.png</iconset>
+   </property>
+   <property name="text">
+    <string>color</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="KelvinResource.qrc"/>
+  <include location="second.qrc"/>
  </resources>
  <connections/>
 </ui>
